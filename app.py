@@ -9,7 +9,7 @@ st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout
 @st.cache
 def get_data_from_excel():
     df = pd.read_excel(
-        io="supermarkt_sales.xlsx",
+        io="supermarket_sales.xlsx",
         engine="openpyxl",
         sheet_name="Sales",
         skiprows=3,
